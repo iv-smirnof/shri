@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>yandex</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <!-- размещу теги фавикона и подстройка под другие браузеры -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/js.js" defer ></script>
+</head>
+<body>
+	<div class="container_body">
+		<header>
+			<section class="container_header">
+				<div class="logo">
+					<a href="#">
+						<img src="img/logo.png" alt="Описание логотипа" class="logo_img">
+					</a>
+				</div>
+				<nav>
+					<input type="checkbox" class="open_menu" id="open_menu">
+					<ul class="menu">
+						<li><a href="#">Пункт1</a></li>
+						<li><a href="#">Пункт2</a></li>
+						<li><a href="#">Пункт3</a></li>
+						<li><a href="#">Пункт4</a></li>
+					</ul>
+					<label for="open_menu"  class="sm_menu_text">Меню</label>
+					<div class="buterbrod">
+						<span class="line_open"></span>
+						<span class="line_open"></span>
+						<span class="line_open"></span>
+					</div>
+				</nav>
+			</section>
+		</header>
+		<main>
+			<section class="container_main">	
+				<h1>Тестовое задание.</h1>
+				<section class="content_text">
+					<article>
+						<h2>Описание.</h2>
+						<p>
+							Что реализовано:<br>
+							Можно добавлять в базу конкретные  данные например: отдельно ФИО, отдельно название лекции и т.д. и в дальнейшем из уже введенных данных собирать стек данных для внесения в базу.<br>
+							Реализовано удаление и редактирование данных при нажатии на соответствующие значки, но при внесении подобных изменений убедитесь что не стоят фильтры, а если они указаны можно их отменить, нажав на кнопку "сброс фильтров".<br>
+							Так же при клике в таблице, на "Имя лектора" и "название аудитории" можно получить дополнительную информацию.
+						</p>
+					</article>	
+				</section>
+				<section class="container_interface">
+					<div class="interface_block">
+						<div class="interface_content">
+							<input type="radio" name="odin" checked="checked" id="tab1"/>
+							<label for="tab1">Ввод даты</label>
+							<input type="radio" name="odin" id="tab2"/>
+							<label for="tab2">Ввод лектора</label>
+							<input type="radio" name="odin" id="tab3"/>
+							<label for="tab3">Ввод лекции</label>
+							<input type="radio" name="odin" id="tab4"/>
+							<label for="tab4">Ввод школы</label>
+							<input type="radio" name="odin" id="tab5"/>
+							<label for="tab5">Ввод аудитории</label>
+							<input type="radio" name="odin" id="tab6"/>
+							<label for="tab6">Ввод собраных данных</label>
+							<input type="radio" name="odin" id="tab7"/>
+							<label for="tab7">Редактирование данных</label>
+							<div class="container_interface_input">
+								<input type="text" name="date_interface" placeholder="Время лекции"  id="date_interface" maxlength="29">
+								<input type="submit" id="date_interface_enter">
+							</div>
+							<div class="container_interface_input">
+								<input type="text" name="name_interface" placeholder="Имя лектора"  id="name_interface" maxlength="60">
+								<input type="text" name="name_text_interface" placeholder="Описание лектора"  id="name_text_interface" maxlength="500">
+								<input type="submit" id="name_interface_enter">
+							</div>
+							<div class="container_interface_input">
+								<input type="text" name="title_interface" placeholder="Название лекции"  id="title_interface" maxlength="160">
+								<input type="submit" id="title_interface_enter">
+							</div>
+							<div class="container_interface_input">
+								<input type="text" name="school_interface" placeholder="Название школы"  id="school_interface" maxlength="300">
+								<input type="text" name="pupil_interface" placeholder="Количество учащихся в школе"  id="pupil_interface" maxlength="10">
+								<input type="submit" id="school_interface_enter">
+							</div>
+							<div class="container_interface_input">
+								<input type="text" name="auditorium_title_interface" placeholder="Название аудитории"  id="auditorium_title_interface" maxlength="160">
+								<input type="text" name="capacity_interface" placeholder="Вместимость аудитории"  id="capacity_interface" maxlength="10">
+								<input type="text" name="auditorium_way_interface" placeholder="Описание проезда к аудитории"  id="auditorium_way_interface" maxlength="500">
+								<input type="submit" id="auditorium_title_interface_enter">
+							</div>
+							<div class="container_interface_input">
+								<select name="date_enter_select" id="date_enter_select">
+									<option value="false">Выберите дату</option>
+								</select>
+								<select name="name_enter_select" id="name_enter_select">
+									<option value="false">Выберите лектора</option>
+								</select>
+								<select name="school_enter_select" id="school_enter_select">
+									<option value="false">Выберите школу</option>
+								</select>
+								<select name="auditorium_enter_select" id="auditorium_enter_select">
+									<option value="false">Выберите аудиторию</option>
+								</select>
+								<select name="title_enter_select" id="title_enter_select">
+									<option value="false">Выберите название лекции</option>
+								</select>
+								<input type="submit" id="submit_enter_select">
+							</div>
+							<div class="container_interface_input">
+								<div class="edit_text_nan">
+									<p style="display: none;"></p>
+								</div>
+								<input type="text" id="edit_field_date" value="">
+								<input type="text" id="edit_field_name" value="">
+								<input type="text" id="edit_field_name_text" value="">
+								<input type="text" id="edit_field_school_title" value="">
+								<input type="text" id="edit_field_pupil" value="">
+								<input type="text" id="edit_field_capacity" value="">
+								<input type="text" id="edit_field_schedule" value="">
+								<input type="text" id="edit_field_auditorium" value="">
+								<input type="text" id="edit_field_title" value="">
+								<input type="hidden" id="edit_hidden">
+								<input type="submit" id="edit_field_enter">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="content_schedule">
+					<h2 class="caption_flexbox">Фильтрация</h2>
+					<p>Выберите из списков нужные категории для фильтрации.</p>
+					<div class="filter">
+						<select name="filter_date" id="filter_date" class="select_u">
+							<option value="false">Выберите дату</option>
+						</select>
+						<select name="filter_school" id="filter_title" class="select_u">
+							<option value="false">Выберите школу</option>
+						</select>
+						<select name="filter_name" id="filter_name" class="select_u">
+							<option value="false">Выберите лектора</option>	
+						</select>
+						<select name="filter_auditorium" id="filter_auditorium" class="select_u">
+							<option value="false">Выберите аудиторию</option>	
+						</select>
+						<div class="select_u" id="select_reset">	
+							Сброс фильтров
+						</div>
+					</div>
+					<h3 class="caption_flexbox">Дополнительный фильтр</h3>
+					<p>Можно выбрать временной интервал, в котором вам важно уточнить какие лекции будут проходить.</p>
+					<div class="filter">
+						<select name="filter_date" id="filter_date_start" class="select_u">
+							<option value="false">Выберите начальную дату</option>
+						</select>
+						<select name="filter_school" id="filter_date_end" class="select_u">
+							<option value="false">Выберите конечную дату</option>
+						</select>
+					</div>
+					<div class="wrapper_row_schedule">
+						<h2>Расписание летней школы.</h2>  
+						<div class="schedule_block" id="schedule_conclusion"></div>
+					</div>
+				</section>
+			</section>
+		</main>
+		<footer>
+			<div onclick="show('none')" id="wrap"></div>
+			<div id="window">
+			<div class="close" onclick="show('none')">
+				<span class="line-close"></span>
+				<span class="line-close"></span>
+			</div>
+			<h4>ФИО лектора</h4>
+			<p>Описание</p>
+			<span></span>
+			</div>
+			<section class="container_footer">
+				<div class="copyright">
+					<p>Мои права - ваши права</p>
+					<a href="http://hh.ru/resume/47e00694ff0345ff250039ed1f7a7374303266" target="_blank">Моё резюме.</a>
+				</div>
+			</section>
+		</footer>
+	</div>
+</body>
+</html>
